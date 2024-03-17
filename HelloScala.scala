@@ -156,51 +156,51 @@ object HelloScala extends App {
     val alpha2 = 2.0
     val alpha5halves = 2.5
 
-    @Test def PerimeterRectangle(): Unit =
+    @Test def checkPerimeterRectangle(): Unit =
       val expected = 10.0
       assertEquals(expected, perimeter(rectangle), 0.0001)
 
-    @Test def PerimeterCircle(): Unit =
+    @Test def checkPerimeterCircle(): Unit =
       val expected = 12.566370614359172
       assertEquals(expected, perimeter(circle), 0.0001)
 
-    @Test def PerimeterSquare(): Unit =
+    @Test def checkPerimeterSquare(): Unit =
       val expected = 8.0
       assertEquals(expected, perimeter(square), 0.0001)
 
-    @Test def scaleFactor1Rectangle(): Unit =
+    @Test def checkScaleFactor1Rectangle(): Unit =
       val expected = 5.0
       assertEquals(expected, scale(rectangle, alpha1), 0.0001)
 
-    @Test def scaleFactor1Circle(): Unit =
+    @Test def checkScaleFactor1Circle(): Unit =
       val expected = 2.0
       assertEquals(expected, scale(circle, alpha1), 0.0001)
 
-    @Test def scaleFactor1Square(): Unit =
+    @Test def checkScaleFactor1Square(): Unit =
       val expected = 4.0
       assertEquals(expected, scale(square, alpha1), 0.0001)
 
-    @Test def scaleFactor2Rectangle(): Unit =
+    @Test def checkScaleFactor2Rectangle(): Unit =
       val expected = 10.0
       assertEquals(expected, scale(rectangle, alpha2), 0.0001)
 
-    @Test def scaleFactor2Circle(): Unit =
+    @Test def checkScaleFactor2Circle(): Unit =
       val expected = 4.0
       assertEquals(expected, scale(circle, alpha2), 0.0001)
 
-    @Test def scaleFactor2Square(): Unit =
+    @Test def checkScaleFactor2Square(): Unit =
       val expected = 8.0
       assertEquals(expected, scale(square, alpha2), 0.0001)
 
-    @Test def scaleFactor5halvedRectangle(): Unit =
+    @Test def checkScaleFactor5halvedRectangle(): Unit =
       val expected = 12.5
       assertEquals(expected, scale(rectangle, alpha5halves), 0.0001)
 
-    @Test def scaleFactor5halvedCircle(): Unit =
+    @Test def checkScaleFactor5halvedCircle(): Unit =
       val expected = 5.0
       assertEquals(expected, scale(circle, alpha5halves), 0.0001)
 
-    @Test def scaleFactor5halvedSquare(): Unit =
+    @Test def checkScaleFactor5halvedSquare(): Unit =
       val expected = 10.0
       assertEquals(expected, scale(square, alpha5halves), 0.0001)
 
